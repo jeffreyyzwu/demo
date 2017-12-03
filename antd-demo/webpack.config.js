@@ -6,14 +6,14 @@ const config = {
         filename: '[name].js',
         path: path.resolve(__dirname, 'dist')
     },
-    //devtool: 'source-map',
+    devtool: 'source-map',
     resolve: {
         extensions: ['.json', '.ts', '.tsx', '.js', '.jsx']
     },
     module: {
         rules: [{
                 test: /\.tsx?$/,
-                use: ['awesome-typescript-loader', 'babel-loader'],
+                use: ['awesome-typescript-loader'],
                 exclude: /node_modules/,
             }, {
                 test: /\.jsx?$/,
