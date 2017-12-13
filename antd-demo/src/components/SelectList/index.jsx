@@ -7,6 +7,7 @@ import FormItem from "../FormItem";
 const Option = Select.Option;
 
 export default class SelectList extends React.Component {
+  
 
   render() {
     const { getFieldDecorator } = this.props.form;
