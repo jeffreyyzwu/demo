@@ -13,18 +13,15 @@ export default class Submit extends React.Component {
   }
 
   render() {
-
     return (
-      <Col span={24}>
-        {/* <FormItem {...formItemLayout} className="submit"> */}
-          <Button onClick={this.handleSubmit}
-            type="primary"
-            className="submit"
-          >
-            提交
+      <FormItem span={24}>
+        <Button onClick={this.handleSubmit}
+          type="primary"
+          className="submit"
+        >
+          提交
         </Button>
-        {/* </FormItem> */}
-      </Col>
+      </FormItem>
     );
   }
 }

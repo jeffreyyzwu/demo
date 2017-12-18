@@ -14,10 +14,14 @@ const formItemLayout = {
 };
 
 export default class FormItem extends React.Component {
+  static defaultProps = {
+    span: 6
+  };
+
   render() {
-    const { children, ...others } = this.props;
+    const { children, span, ...others } = this.props;
     return (
-      <Col span={6}>
+      <Col span={span}>
         <Form.Item {...formItemLayout}
           {...others}>
           {children}
@@ -25,6 +29,4 @@ export default class FormItem extends React.Component {
       </Col>
     );
   }
-
-
 }
