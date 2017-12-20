@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Col } from "antd";
+import { Button } from "antd";
 import FormItem from "../FormItem";
 import "./index.css";
 
